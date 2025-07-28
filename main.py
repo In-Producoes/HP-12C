@@ -28,24 +28,10 @@ img_m = ft.Image(
     fit=ft.ImageFit.CONTAIN,
     border_radius=20,
 )
-GITHUB_TOKEN = "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"
 class MyApp:
     def __init__(self, page: ft.Page):
         self.page = page
         self._main = None
-        self.arquivo_GUID = "GUID.txt"
-        #AUTENTICACAO COM GIT
-        self.branch = "main"
-        self.CLOSE_APP = f"https://api.github.com/repos/In-Producoes/Main/contents/Calculadoras/Close_App?ref={self.branch}"
-        self.ATUALIZACAO = f"https://api.github.com/repos/In-Producoes/Main/contents/Calculadoras/Verificar_Atualizar?ref={self.branch}"
-        self.LINK_ATUALIZACAO = f"https://api.github.com/repos/In-Producoes/Main/contents/Calculadoras/Link_Atualizar?ref={self.branch}"
-        self.VERIFI_IP = f"https://api.github.com/repos/In-Producoes/Main/contents/Calculadoras/Verificar_IP?ref={self.branch}"
-        self.LISTA_IP = f"https://api.github.com/repos/In-Producoes/Main/contents/Calculadoras/Ips?ref={self.branch}"
-        self.MANUTENCAO = f"https://api.github.com/repos/In-Producoes/Main/contents/Calculadoras/Manutencao?ref={self.branch}"
-        self.headers = {
-            "Authorization": f"token {GITHUB_TOKEN}",
-            "Accept": "application/vnd.github.v3+json"
-        }
         self.page.window.width = 450
         self.page.window.height = 700
         self.page.window.max_width = 450
