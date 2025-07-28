@@ -1069,4 +1069,6 @@ class MyApp:
         self.infix.press(",")
         self.display.value = self.infix.input
 
-ft.app(MyApp)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))
+    ft.app(target=Main, view=ft.AppView.WEB_BROWSER, port=port)
