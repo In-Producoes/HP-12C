@@ -10,7 +10,6 @@ from calculator import CalculatorInfix
 import asyncio
 import socket
 import smtplib
-import winreg
 import os
 from email.message import EmailMessage
 
