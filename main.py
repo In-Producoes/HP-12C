@@ -498,7 +498,7 @@ class MyApp:
             ]),
             ft.Stack([
                 ft.Column([
-                    ft.Container(expand=True), row_botoes1, ft.Container(expand=True)
+                    ft.Container(expand=True), row_botoes1, ft.Container(expand=True),
                     ft.Container(expand=True),row_botoes2,ft.Container(expand=True),
                     ft.Container(expand=True),row_botoes3,ft.Container(expand=True),
                     ft.Container(expand=True),row_botoes4,ft.Container(expand=True),
