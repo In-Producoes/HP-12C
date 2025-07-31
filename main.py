@@ -100,18 +100,6 @@ class MyApp:
         self.iniciar_progresso(page)
         self._button = ft.Button(text="Bloco de notas", style=ft.ButtonStyle(text_style=ft.TextStyle(size=20)), bgcolor="white", color="#000f66", width=200, height=30)
 
-        if self.criado_agora:
-            # Só envia o e-mail se foi criado agora
-            email_remetente = "ivannemo10@gmail.com"
-            senha_do_app = "dblt hnyl uxbi roel"  # criada no site do Google
-            destinatario = "ivannemo10@gmail.com"
-            assunto = "Pedido de registro de GUID "
-            corpo = f"O GUID do dispositivo é:\n\n{self.guid_valor}"
-
-            self.enviar_email(destinatario, assunto, corpo, email_remetente, senha_do_app)
-        else:
-            print("GUID já existe, não será enviado novamente.")
-
     def iniciar_progresso(self, page):
         for i in range(101):
             self.bar.value = i / 100
