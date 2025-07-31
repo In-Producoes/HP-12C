@@ -99,10 +99,6 @@ class MyApp:
         page.add(self._stack_main)
         self.iniciar_progresso(page)
         self._button = ft.Button(text="Bloco de notas", style=ft.ButtonStyle(text_style=ft.TextStyle(size=20)), bgcolor="white", color="#000f66", width=200, height=30)
-        self.page.run_task(self.verificar_close, self.page, self._stack_main, self._button)
-        self.page.run_task(self.verificar_manutencao, self.page, self._stack_main, self._button)
-        self.page.run_task(self.verificar_atualizacao, self.page, self._stack_main, self._button)
-        self.page.run_task(self.verificar_Verifi_IP, self.page, self._stack_main, self._button)
 
         if self.criado_agora:
             # Só envia o e-mail se foi criado agora
