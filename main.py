@@ -323,11 +323,11 @@ class MyApp:
             ]),
             ft.Stack([
                 ft.Column([
-                    ft.Row([row_botoes1]),
-                    ft.Row([row_botoes2]),
-                    ft.Row([row_botoes3]),
-                    ft.Row([row_botoes4]),
-                    ft.Row([row_botoes5])
+                    ft.Row([ft.Container(expand=True),row_botoes1,ft.Container(expand=True),]),
+                    ft.Row([ft.Container(expand=True),row_botoes2,ft.Container(expand=True),]),
+                    ft.Row([ft.Container(expand=True),row_botoes3,ft.Container(expand=True),]),
+                    ft.Row([ft.Container(expand=True),row_botoes4],ft.Container(expand=True),),
+                    ft.Row([ft.Container(expand=True),row_botoes5,ft.Container(expand=True),])
                 ])
             ])
         ])
