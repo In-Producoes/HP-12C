@@ -493,15 +493,15 @@ class MyApp:
         self._stack_main.controls.clear()
         self._stack_main.controls.append(ft.Column([
             ft.Stack([
-                ft.Container(expand=True), ft.Row([self.display,ft.Container(expand=True), img, ft.Container(expand=True)]),
-                Back,ft.Container(expand=True)
+                ft.Row([self.display,ft.Container(expand=True), img, ft.Container(expand=True)]),
+                Back,
             ]),
             ft.Stack([
                 ft.Column([
-                    ft.Container(expand=True), row_botoes1, ft.Container(expand=True),
-                    ft.Container(expand=True),row_botoes2,ft.Container(expand=True),
-                    ft.Container(expand=True),row_botoes3,ft.Container(expand=True),
-                    ft.Container(expand=True),row_botoes4,ft.Container(expand=True),
+                    row_botoes1,
+                    row_botoes2,
+                    row_botoes3,
+                    row_botoes4,
                 ]),
                 ft.Container(expand=True), enter_btn, ft.Container(expand=True)
             ])
