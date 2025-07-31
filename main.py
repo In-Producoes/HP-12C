@@ -318,7 +318,7 @@ class MyApp:
             ft.Stack([
                 ft.Container(
                     ft.Row([
-                        txt_IN_P_Con, ft.Container(expand=True), Back
+                        ft.Container(expand=True), txt_IN_P_Con, ft.Container(expand=True), Back
                     ])
                 )
             ]),
